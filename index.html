@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: #1F2937;
+            color: #F9FAF8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        header nav a {
+            color: #E5E7EB;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            color: #F9FAF8;
+        }
+
+        img {
+            border-radius: 5px;
+
+
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1F2937;
+            color: #F9FAF8;
+            padding: 60px 40px;
+        }
+
+        .hero .text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero .text h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin: 0 0 20px 0;
+        }
+
+        .hero .text p {
+            font-size: 18px;
+            color: #E5E7EB;
+            margin: 0 0 20px 0;
+        }
+
+        .hero .text button {
+            background-color: #3882F6;
+            color: #F9FAF8;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .hero img {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .info {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .info h2 {
+            font-size: 36px;
+            color: #1F2937;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        .info .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .info .box {
+            border: 2px solid #3882F6;
+            padding: 30px;
+            min-width: 150px;
+            max-width: 200px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .info .box p {
+            font-size: 16px;
+            color: #1F2937;
+            margin-top: 10px;
+        }
+
+
+        .quote {
+            background-color: #e5e7eb;
+            padding: 100px 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+
+        .quote-item p {
+            font-size: 36px;
+            font-style: italic;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+
+        .author {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            font-size: 24px;
+            color: #1f2937;
+        }
+
+        .cta {
+            background-color: #3882F6;
+            color: #F9FAF8;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cta h2 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+
+        .cta p {
+            font-size: 16px;
+            margin: 0 0 20px 0;
+        }
+
+        .cta button {
+            background-color: transparent;
+            color: #F9FAF8;
+            border: 2px solid #F9FAF8;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #1F2937;
+            color: #F9FAF8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width:800px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 30px;
+            }
+
+            .info .boxes {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="season.png" alt="Logo" style="width:50px; height:50px;"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">For more</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="text">
+            <h1>SEASONALS</h1>
+            <p>Spring passes and one remembers one's innocence. Summer passes and one remembers one's exuberance. Autumn
+                passes and one remembers one's reverence. Winter passes and one remembers one's perseverance.</p>
+            <button>Sign up</button>
+        </div>
+        <img src="all.jpg" alt="Placeholder Image">
+    </section>
+
+    <section class="info">
+        <h2>Some random information.</h2>
+        <div class="boxes">
+            <div class="box">
+                <img src="summer.jpg" alt="summer" style="width:100%; height:auto;">
+                <p>A life without love is like a year without summer</p>
+            </div>
+            <div class="box">
+                <img src="spring.jpg" alt="spring" style="width:100%; height:auto;">
+                <p>Where flowers bloom, so does hope</p>
+            </div>
+            <div class="box">
+                <img src="winter.jpg" alt="winter" style="width:100%; height:auto;">
+                <p>Winter is not a season, it's a celebration</p>
+            </div>
+            <div class="box">
+                <img src="autumn.jpg" alt="autumn" style="width:100%; height:auto;">
+                <p>Autumn is a second spring when every leaf is a flower</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="quote-item">
+            <p>"The flower that blooms in adversity is the most rare and beautiful of all."</p>
+            <span class="author">- Walt Disney</span>
+        </div>
+
+        <div class="quote-item">
+            <p>"Deep summer is when laziness finds respectability."</p>
+            <span class="author">- Sam Keen</span>
+        </div>
+
+        <div class="quote-item">
+            <p>"How beautiful the leaves grow old. How full of light and color are their last days."</p>
+            <span class="author">- John Burroughs</span>
+        </div>
+
+        <div class="quote-item">
+            <p>"In seed time learn, in harvest teach, in winter enjoy."</p>
+            <span class="author">- William Blake</span>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Call to action! It's time!</h2>
+        <p>Sign up to view more</p>
+        <button>Sign up</button>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2025 YourName. All rights reserved.</p>
+        <p>
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+        <p>Follow me:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+        Copyright © The Odin Project 2021
+
+
+    </footer>
+
+</body>
+
+</html>
