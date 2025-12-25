@@ -45,8 +45,3 @@ No frameworks or libraries (just pure frontend).
 
 ---
 
-## 💡 How to Run Locally
-
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/<yourusername>/odin-landingpage.git
